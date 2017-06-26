@@ -136,3 +136,9 @@ full_data %>%
 The span of 1 passes a qualitative check.
 
 This approach is sound for quickly interpolating missing data. Here, we extended the technique to forcast 1 period ahead. For more sophisticated univariate forecasting, review Rob J Hyndman's [forecast](https://www.otexts.org/fpp) package in R.
+
+
+# Update: padr package for adding missing values
+The `padr` package offers simple tools for working with date/time varibales from within a tidy framework. `padr::pad` could be used along with the above to automatically create a gapless timeseries. See [the padr vignette[(https://cran.r-project.org/web/packages/padr/vignettes/padr.html) for more detail. 
+
+
